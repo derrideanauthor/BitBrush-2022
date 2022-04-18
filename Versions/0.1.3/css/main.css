@@ -1,0 +1,126 @@
+@font-face{
+	font-family: 'Teko';
+	src: url(fonts/Teko-Medium.ttf) format('truetype');
+}
+
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+svg, img{
+	fill: currentColor;
+}
+
+body{
+	font-family: arial;
+	margin: 0;
+	overflow: hidden;
+
+	-webkit-touch-callout: none; /*Disable all touch??*/
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#app-container{
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	width: 100vw;
+}
+
+#app-id{
+	order: 1;
+	height: 60px;
+	padding-left: 25px;
+	display: inline-flex;
+}
+#app-id h1{
+	font-family: 'Teko';
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 32px;
+	line-height: 20px;
+	color: #E9E0D6;
+	margin: 0;
+	font-weight: normal;
+	height: 100%;
+}
+
+#app-id h1 img{
+	height: 20px;
+	margin-right: 10px;
+}
+#app-id h1 span{
+	display: inline-flex;
+	margin: 3px 0 0 0;
+}
+
+#app-file{
+	order: 3;
+	width: 150px;
+	display: flex;
+	align-self: flex-end;
+}
+
+#app-menu{
+	display: flex;
+	justify-content: space-between;
+	width: 100vw;
+	z-index: 10010;
+}
+
+#app-menu .drawer{
+	z-index: 10020;
+}
+
+#app-main{
+	display: flex;
+	flex-direction: column;
+	width: 100vw;
+	height: calc(100vh - 60px);
+}
+
+#workspace{
+	display: flex;
+	flex: 1;
+
+	width: 100vw;
+	position: relative;
+	background-color: #999;
+}
+
+#pasteboard{
+	flex: 1;
+	background-color: #999;
+	/*width: 100%;*/
+	/*height: 100%;*/
+	position: relative;
+	overflow: hidden;
+}
+
+canvas.layer{
+	transform-origin: 0 0;
+	image-rendering: pixelated;
+	-webkit-image-rendering: pixelated;
+	-moz-image-rendering: pixelated;
+	-ms-image-rendering: pixelated;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	/*transition: transform .3s;*/
+	position: absolute;
+	cursor: none;
+}
+
+#minimap{
+	image-rendering: pixelated;
+	background-color: white;
+}
+.row{
+	display: flex;
+}

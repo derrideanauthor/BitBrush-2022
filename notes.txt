@@ -1,0 +1,107 @@
+
+
+querySelectorAll is used a few times. Check compatibility with browsers.
+
+
+keyboard stuff:
+https://css-tricks.com/snippets/javascript/javascript-keycodes/
+
+blending modes:
+
+/* globalCompositeOperation :
+  normal | multiply | screen | overlay | 
+  darken | lighten | color-dodge | color-burn | hard-light | 
+  soft-light | difference | exclusion | hue | saturation | 
+  color | luminosity
+*/
+ctx.globalCompositeOperation = 'multiply';
+
+
+JSON
+Handy for duplicating simple objects, not used because cant copy keys which are of type ImageData
+obj2 = JSON.parse(JSON.stringify(obj1))
+
+Compatibility:
+
+ImageData constructor might not work with android webview
+(used in sprite.js)
+- could substitute this for blank image data from this.stamp (used for mixdowns). Clear stamp and use.
+
+Constraints:
+
+- Add layer max of 50
+- Add Frame max of n
+
+Colors:
+
+1- #343738
+2- #434749
+3- #4C5154;
+4- #5D6366;
+5- #6E7477;
+6- #AFAFAF; LIGHTEST
+	
+Blue UI: #00A1AF
+
+Menus:
+
+Frame: 
+- onionskin:  opacity, onionskin forward@backward,, color overlay settings?
+- add frame label, group frames (maybe?)
+- set fps
+- frame thumb size, preview size
+- panel look - position, arrangement
+- export options (set up a quick export button function maybe?)
+- preview and thumbs - tickbox - Show hidden layers (ticked by default)
+- preview: autoplay, fps
+- menu position L or R
+
+Layers (document Panel):
+- add reference image - all frames, starting at different frames
+- resize artboard and tick to scale existing content
+- [-] show only current layer
+- Set current layer properties (name, colour tag?)
+- thumbnail size, thumbnail off
+- merge with layer choose[v] / layer below
+- set pasteboard colours
+- guides/grid, +set new guides?
+- transparency blocks color or bg color
+
+main:
+- switch to text icons where possible (iconographic or text interface)
+- ui button size big (50x50), wide (50x40)
+- UI colors
+
+Settings:
+
+Tools:
+Dither brush: [',] [,'] or on first click
+
+
+Needed additions:
+- updateDOMScale(100||'fit'||fill)
+
+
+Tooltip text & action popup:
+
+select tool:
+deselect: "commit edit and deselect" & "selection destroyed"
+cut: "cut pixels in selection" & "selected pixels cut"
+copy: "copy pixels in selection" & "selected pixels copied"
+paste: "paste pixels" & "pixels pasted"/"no pixels copied to paste"
+reselect : "remake previous selection" / "I can't do that, Dave."
+
+Drawing upgrades:
+
+Fixes:
+- Circle skips every second pixel when drawing - no idea why
+
+Needed: 
+- generate shades and tints when color picker is used
+- click on selected harmony to generate harmonies for it (har mony icon on hover over?)
+- drag function on color panel
+
+Wants:
+- ALT action on line tool (like illustrator)
+- SHIFT action on line and pencil = constrain 0,45,90,
+- SHIFT click pencil tool creates line between this and last click

@@ -1,0 +1,50 @@
+@font-face {
+  font-family: 'bitbrush-ui';
+  src:  url('fonts/bitbrush-ui.eot?shz8cq');
+  src:  url('fonts/bitbrush-ui.eot?shz8cq#iefix') format('embedded-opentype'),
+    url('fonts/bitbrush-ui.ttf?shz8cq') format('truetype'),
+    url('fonts/bitbrush-ui.woff?shz8cq') format('woff'),
+    url('fonts/bitbrush-ui.svg?shz8cq#bitbrush-ui') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="bb-"], [class*=" bb-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'bitbrush-ui' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.bb-icon-1x1:before {
+  content: "\e900";
+}
+.bb-icon-2x2:before {
+  content: "\e901";
+}
+.bb-icon-3x3:before {
+  content: "\e902";
+}
+.bb-icon-4x4:before {
+  content: "\e903";
+}
+.bb-icon-hand:before {
+  content: "\e904";
+}
+.bb-icon-layer-all:before {
+  content: "\e905";
+}
+.bb-icon-sym-x:before {
+  content: "\e906";
+}
+.bb-icon-sym-y:before {
+  content: "\e907";
+}
