@@ -98,7 +98,7 @@ Fixes:
 
 Needed: 
 - generate shades and tints when color picker is used
-- click on selected harmony to generate harmonies for it (har mony icon on hover over?)
+- click on selected harmony to generate harmonies for it (harmony icon on hover over?)
 - drag function on color panel
 
 Wants:
