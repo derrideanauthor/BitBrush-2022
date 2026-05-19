@@ -1,0 +1,54 @@
+.panel {
+  padding: 8px;
+  border-bottom: 1px solid #333;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.title {
+  font-size: 11px;
+  text-transform: uppercase;
+  opacity: 0.5;
+  letter-spacing: 0.05em;
+}
+
+.addBtn {
+  background: transparent;
+  border: 1px solid #555;
+  color: #e0e0e0;
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  font-size: 14px;
+  padding: 0;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.item {
+  padding: 4px 6px;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+.item:hover {
+  background: #333;
+}
+
+.itemActive {
+  background: #2a4a7a;
+}

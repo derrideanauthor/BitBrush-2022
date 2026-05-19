@@ -1,0 +1,41 @@
+.header {
+  display: flex;
+  align-items: center;
+  padding: 4px 12px;
+  background: var(--header-bg, #1a1a1a);
+  border-bottom: 1px solid #444;
+  gap: 12px;
+  height: 36px;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 16px;
+  color: var(--accent-color, #7eb6f6);
+}
+
+.projectName {
+  flex: 1;
+  font-size: 13px;
+  opacity: 0.7;
+}
+
+.actions {
+  display: flex;
+  gap: 4px;
+}
+
+.btn {
+  background: transparent;
+  border: 1px solid #555;
+  color: #e0e0e0;
+  cursor: pointer;
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.btn:disabled {
+  opacity: 0.3;
+  cursor: default;
+}

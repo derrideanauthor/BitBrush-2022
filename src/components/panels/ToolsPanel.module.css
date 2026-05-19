@@ -1,0 +1,32 @@
+.panel {
+  display: flex;
+  flex-direction: column;
+  padding: 4px;
+  background: var(--panel-bg, #1e1e1e);
+  border-right: 1px solid #333;
+  gap: 2px;
+  width: 40px;
+}
+
+.toolBtn {
+  background: transparent;
+  border: 1px solid transparent;
+  color: #e0e0e0;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toolBtn:hover {
+  background: #333;
+}
+
+.toolBtnActive {
+  background: #2a4a7a;
+  border-color: #5a8abf;
+}

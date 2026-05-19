@@ -1,0 +1,53 @@
+.panel {
+  padding: 8px;
+  border-bottom: 1px solid #333;
+}
+
+.title {
+  font-size: 11px;
+  text-transform: uppercase;
+  opacity: 0.5;
+  margin-bottom: 6px;
+  letter-spacing: 0.05em;
+}
+
+.swatches {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 8px;
+}
+
+.swatch {
+  width: 28px;
+  height: 28px;
+  border: 2px solid #555;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.swatchActive {
+  border-color: #7eb6f6;
+}
+
+.hexRow {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.hexLabel {
+  font-size: 11px;
+  opacity: 0.6;
+  width: 24px;
+}
+
+.hexInput {
+  flex: 1;
+  background: #2a2a2a;
+  border: 1px solid #444;
+  color: #e0e0e0;
+  padding: 3px 6px;
+  font-size: 12px;
+  border-radius: 3px;
+  font-family: monospace;
+}

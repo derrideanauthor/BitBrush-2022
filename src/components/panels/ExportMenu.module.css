@@ -1,0 +1,30 @@
+.panel {
+  padding: 8px;
+  border-bottom: 1px solid #333;
+}
+
+.title {
+  font-size: 11px;
+  text-transform: uppercase;
+  opacity: 0.5;
+  margin-bottom: 6px;
+  letter-spacing: 0.05em;
+}
+
+.exportBtn {
+  display: block;
+  width: 100%;
+  background: #2a3a5a;
+  border: 1px solid #4a6a9a;
+  color: #e0e0e0;
+  cursor: pointer;
+  padding: 5px 8px;
+  border-radius: 3px;
+  font-size: 12px;
+  margin-bottom: 4px;
+  text-align: left;
+}
+
+.exportBtn:hover {
+  background: #3a4a7a;
+}

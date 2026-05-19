@@ -1,0 +1,29 @@
+{
+  "name": "bitbrush",
+  "version": "0.2.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
+  },
+  "dependencies": {
+    "file-saver": "^2.0.5",
+    "gifenc": "^1.0.3",
+    "jszip": "^3.10.1",
+    "preact": "^10.29.2",
+    "zustand": "^5.0.13"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.10.5",
+    "@types/file-saver": "^2.0.7",
+    "eslint": "^9.0.0",
+    "jsdom": "^25.0.0",
+    "prettier": "^3.0.0",
+    "typescript": "^5.5.0",
+    "vite": "^6.0.0",
+    "vitest": "^3.0.0"
+  }
+}
